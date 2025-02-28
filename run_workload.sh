@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /tmp
+
 trace-cmd record -p function_graph -g ext4_mb_new_blocks
 
 trace-cmd report --profile
